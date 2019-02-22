@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Prenota</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h2>Inserire i dati</h2>
+<form method="POST" action="gestione.jsp">
+
+    <div class="form-group">
+    <label for="username">Cognome:</label>
+    <input class="form-control" name="username" type="text">
+    </div>
+    
+    <div class="form-group">
+    <label for="classe">Classe:</label>
+    <select class="form-control" name="classe">
+    <option></option>
+    <option>1E INF</option>
+    <option>2E INF</option>
+    <option>3E INF</option>
+    <option>4E INF</option>
+    <option>5E INF</option>
+    </select>
+    </div>
+    
+    <p><strong>Desidero vedere i compiti in classe svolti:</strong></p>
+    <div class="radio">
+     <label><input type="radio" name="compito" checked>Sì</label>
+     <label><input type="radio" name="compito" checked>No</label>
+    </div>
+    
+    <p><strong>Docenti:</strong></p>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Giraldi" name="mate">Giraldi (Matematica)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Malizia" name="tecn">Malizia (Tecnologie)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Bellocco" name="ingl">Bellocco (Inglese)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Spadoni" name="ita">Spadoni (Lettere e Storia)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Arcostanzo" name="fis">Arcostanzo (Ed. Fisica)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Titze" name="inf">Titze (Informatica)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Invernizzi" name="rel">Invernizzi (Religione)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Carrara" name="elett">Carrara (Elettronica)</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="Apicella" name="sis">Apicella (Sistemi)</label>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Send</button>
+    <button type="reset" class="btn btn-danger">Reset</button>
+    
+</form>
+</div>
+</body>
+</html>

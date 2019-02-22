@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <title>Prenota</title>
+</head>
+<body>
+<h2>Inserire i dati</h2>
+<form method="POST" action="gestione.jsp">
+
+    <fieldset>
+        <strong>Cognome: <input type="text" name="username" /><br>
+        
+        Classe: 
+        <select name="classe">
+            <option value=""></option>
+            <option value="1E">1E INF</option>
+            <option value="2E">2E INF</option>
+            <option value="3E">3E INF</option>
+            <option value="4E">4E INF</option>
+            <option value="5E">5E INF</option>
+        </select> <br>
+    
+        Desidero vedere i compiti in classe svolti: <br />
+        <input type="radio" name="compito" value="Si"> Sì<br>
+        <input type="radio" name="compito" value="No" checked> No<br>
+
+        
+        Docenti: <br />
+        <input type="checkbox" name="mate" value="Giraldi">Giraldi (Matematica)
+        <br>
+        <input type="checkbox" name="tecn" value="Malizia">Malizia (Tecnologie)
+        <br>
+        <input type="checkbox" name="ingl" value="Bellocco">Bellocco (Inglese)
+        <br>
+        <input type="checkbox" name="ita" value="Spadoni">Spadoni (Lettere e Storia)
+        <br>
+        <input type="checkbox" name="fis" value="Arcostanzo">Arcostanzo (Ed. Fisica)
+        <br> 
+        <input type="checkbox" name="inf" value="Titze">Titze (Informatica)
+        <br>
+        <input type="checkbox" name="rel" value="Invernizzi">Invernizzi (Religione)
+        <br>
+        <input type="checkbox" name="elett" value="Carrara">Carrara (Elettronica)
+        <br>
+        <input type="checkbox" name="sis" value="Apicella">Apicella (Sistemi)
+        <br>
+    
+    </fieldset>
+
+  <input type="submit" value="SEND" />
+  <input type="reset" value="CLEAR" />
+  
+</form>
+</body>
+</html>
